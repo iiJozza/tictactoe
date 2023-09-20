@@ -26,14 +26,96 @@ main {
     height: 100px;
     background-color: white ;
     border: black 2px solid;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top:none;
+
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.cell:first-child,
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
 }
 
 #restart {
     width: 200px;
     height: 50px;
     font-size: 18px;
+    cursor: pointer;
 }
 
-.winning-message, .score-area {
+ .winning-message{
     padding: 10px 0px;
+}
+.scores-x, .scores-y {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.scores-x {
+    color: red;
+    text-shadow:
+        -.5px -.5px 0 #000,
+        .5px -.5px 0 #000,
+        -.5px .5px 0 #000,
+        .5px .5px 0 #000;
+}
+
+.scores-y {
+    color: blue;
+    text-shadow:
+        -.5px -.5px 0 #000,
+        .5px -.5px 0 #000,
+        -.5px .5px 0 #000,
+        .5px .5px 0 #000;
+}
+
+.circle {
+
+}
+
+.x {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+}
+
+.x::before,
+.x::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    transform-origin: center;
+}
+
+.x::before {
+    transform: rotate(45deg);
+}
+
+.x::after {
+    transform: rotate(-45deg);
 }
