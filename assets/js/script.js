@@ -8,6 +8,7 @@ const winningCombinations = [
 ];
 let circleTurn = false;
 
+//makes sure only one mark per cell
 
 cellElements.forEach(cell => {
     cell.addEventListener('click', handleClick, { once : true })
@@ -29,7 +30,11 @@ function handleClick(e) {
     gameLoop();
 }
 
-//checks win
+//checks if winning combination exists
+
+function checkWin(currentClass) {
+  return winningCombinationExists(currentClass);
+}
 
 function winningCombinationExists(currentClass) {
     return winningCombinations.some(combination => {
@@ -38,10 +43,17 @@ function winningCombinationExists(currentClass) {
         });
     });
 }
-function checkWin(currentClass) {
-  return winningCombinationExists(currentClass);
+
+//handles if it is a draw
+
+function isBoardFull() {
+    return [...cellElements].every(cell => {
+        return cell.classList.contains(xClass) || cell.classList.contains(circleClass);
+    });
 }
- // Check for a win
+
+ // Checks if the 
+
 function gameLoop() {
     if (checkWin(xClass)) {
         displayResult("X");
