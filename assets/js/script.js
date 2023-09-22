@@ -7,6 +7,8 @@ const winningCombinations = [
     [0, 4, 8], [2, 4, 6]             
 ];
 let circleTurn = false;
+let gameOver = false;
+
 
 //makes sure only one mark per cell
 
@@ -28,12 +30,22 @@ function handleClick(e) {
     placeMark(cell, currentClass);
     circleTurn = !circleTurn;
     gameLoop();
+    
 }
+
+//disables mark placement
+
+function disableCellClick() {
+    cellElements.forEach(cell => {
+        cell.removeEventListener('click', handleClick);
+    });
+}
+
 
 //checks if winning combination exists
 
 function checkWin(currentClass) {
-  return winningCombinationExists(currentClass);
+    return winningCombinationExists(currentClass);
 }
 
 function winningCombinationExists(currentClass) {
@@ -58,35 +70,30 @@ function gameLoop() {
     if (checkWin(xClass)) {
         displayResult("X");
         incrementScoreX();
-        removeClickHandlers();
+        disableCellClick();
         return;
     } else if (checkWin(circleClass)) {
         displayResult("O");
         incrementScoreO();
-        removeClickHandlers();
+        disableCellClick(); 
         return;
     } else if (isBoardFull()) {
-        displayResult("It's a draw!", "The game ended in a draw.");
-        removeClickHandlers();
+        displayResult("It's a draw!");
+        disableCellClick();
         return;
     }
 }
 
-/**
- * Gets the current score from the dom and increments it by 1
- */
-function incrementScoreX() {
+//gets the current score from dom and adds 1
 
+function incrementScoreX() {
     let oldScore = parseInt(document.getElementById("won-times-x").innerText);
     document.getElementById("won-times-x").innerText = ++oldScore;
-
 }
 
 function incrementScoreO() {
-
     let oldScore = parseInt(document.getElementById("won-times-o").innerText);
     document.getElementById("won-times-o").innerText = ++oldScore;
-
 }
 
 //resets the board
@@ -107,11 +114,11 @@ function resetBoard() {
     });
 }
 
-//Alerts the user if someone won
+//alerts the user if someone won
 
 function displayResult(currentClass, message = '') {
     if (message) {
-        alert(message); // Display the custom message if provided
+        alert(message);
     } else {
         alert(`Congrats ${currentClass} for winning!`);
     }
