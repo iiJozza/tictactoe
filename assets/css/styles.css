@@ -17,6 +17,21 @@ main {
     flex-direction: column;
 }
 
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+p, h1 {
+    font-family: Arial, sans-serif;
+}
+
 /*footer*/
 
 footer {
@@ -165,4 +180,16 @@ footer {
 
 .x::after {
     transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+    .board {
+        width: 80%;
+        max-width: 800px;
+    }
+
+    .cell {
+        width: 150px;
+        height: 150px;
+    }
 }

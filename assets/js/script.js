@@ -1,10 +1,10 @@
-const xClass = 'x'
-const circleClass = 'circle'
-const cellElements = document.querySelectorAll('[data-cell')
+const xClass = 'x';
+const circleClass = 'circle';
+const cellElements = document.querySelectorAll('[data-cell');
 const winningCombinations = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], 
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], 
-    [0, 4, 8], [2, 4, 6]             
+    [0, 1, 2], [3, 4, 5], [6, 7, 8],
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],
+    [0, 4, 8], [2, 4, 6]
 ];
 let circleTurn = false;
 let gameOver = false;
@@ -13,8 +13,8 @@ let gameOver = false;
 //makes sure only one mark per cell
 
 cellElements.forEach(cell => {
-    cell.addEventListener('click', handleClick, { once : true })
-})
+    cell.addEventListener('click', handleClick, { once: true });
+});
 
 //handles the placment of the marks
 
@@ -30,7 +30,7 @@ function handleClick(e) {
     placeMark(cell, currentClass);
     circleTurn = !circleTurn;
     gameLoop();
-    
+
 }
 
 //disables mark placement
@@ -64,7 +64,7 @@ function isBoardFull() {
     });
 }
 
- //checks for wins, draws, displays results, and ends game.
+//checks for wins, draws, displays results, and ends game.
 
 function gameLoop() {
     if (checkWin(xClass)) {
@@ -75,7 +75,7 @@ function gameLoop() {
     } else if (checkWin(circleClass)) {
         displayResult('O');
         incrementScoreO();
-        disableCellClick(); 
+        disableCellClick();
         return;
     } else if (isBoardFull()) {
         displayResult();
