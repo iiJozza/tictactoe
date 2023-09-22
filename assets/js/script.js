@@ -57,23 +57,28 @@ function isBoardFull() {
 function gameLoop() {
     if (checkWin(xClass)) {
         displayResult("X");
-        removeClickHandlers(); 
+        removeClickHandlers();
         return;
     } else if (checkWin(circleClass)) {
         displayResult("O");
         removeClickHandlers();
         return;
     } else if (isBoardFull()) {
-        displayResult("It's a draw!");
-        removeClickHandlers(); 
+        displayResult("It's a draw!", "The game ended in a draw.");
+        removeClickHandlers();
         return;
     }
 }
 
+
 //Alerts the user if someone won
 
-function displayResult(currentClass) {
-    alert(`Congrats ${currentClass} for winning!`);
+function displayResult(currentClass, message = '') {
+    if (message) {
+        alert(message); // Display the custom message if provided
+    } else {
+        alert(`Congrats ${currentClass} for winning!`);
+    }
 }
 
 gameLoop();
