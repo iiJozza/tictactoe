@@ -1,6 +1,8 @@
 /*General styling*/
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -13,6 +15,16 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 
 /*The game board*/
@@ -29,7 +41,7 @@ main {
 .cell {
     width: 100px;
     height: 100px;
-    background-color: white ;
+    background-color: white;
     border: black 2px solid;
     cursor: pointer;
     display: flex;
@@ -41,8 +53,8 @@ main {
 
 .cell:first-child,
 .cell:nth-child(2),
-.cell:nth-child(3){
-    border-top:none;
+.cell:nth-child(3) {
+    border-top: none;
 }
 
 .cell:nth-child(3),
@@ -72,13 +84,14 @@ main {
     cursor: pointer;
 }
 
-.reset{
+.reset {
     padding: 10px 0px;
 }
 
 /*Scores*/
 
-.scores-x, .scores-y {
+.scores-x,
+.scores-y {
     display: inline-block;
     margin-right: 10px;
     font-size: 25px;
@@ -131,7 +144,7 @@ main {
     width: 100px;
     height: 100px;
     position: relative;
-    
+
 }
 
 .x::before,
