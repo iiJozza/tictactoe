@@ -50,30 +50,24 @@
     </header>
 
     <main>
-        <div id="information">
-            <h2>Welcome to TicTacToe!</h2>
-            <h3>Rules:</h3>
-            <p>Each player is designated with a specific mark, either O or X, which you take turn to place on the board.
-                the goal of the game is to try to match three of your own marks in either horizontal, vertical or diagonal direction within
-                the board. The first one to achieve this wins!
-                <br>
-                But remember that there is only 9 cells to place your mark so be careful where you put your mark or your opponent might
-                either block your win or win themselves.  
-            </p>
-            <h3>To start the game</h3>
-            <p>
-                In order to start the game you have to press the start button below. This will send you to a grid and you can start playing!
-                <br>
-                Good luck! 
-            </p>
-        </div>
-
-    <div class="reset">
-        <button class="button">
-            <a href="game.html">Start</a>
-        </button>
-    </div>
-
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="reset">
+        <button id="restart" class="button">Restart</button>
+      </div>
+      <div class="score-area">
+        <p class="scores-x">X Has Won <span id="won-times-x">0</span> Times!</p>
+        <p class="scores-y">O Has Won <span id="won-times-o">0</span> Times!</p>
+      </div>
     </main>
 
     <footer>
