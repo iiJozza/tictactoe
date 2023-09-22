@@ -68,17 +68,17 @@ function isBoardFull() {
 
 function gameLoop() {
     if (checkWin(xClass)) {
-        displayResult("X won!");
+        displayResult('x');
         incrementScoreX();
         disableCellClick();
         return;
     } else if (checkWin(circleClass)) {
-        displayResult("O won!");
+        displayResult('O');
         incrementScoreO();
         disableCellClick(); 
         return;
     } else if (isBoardFull()) {
-        displayResult("It's a draw!");
+        displayResult();
         disableCellClick();
         return;
     }
@@ -116,11 +116,11 @@ function resetBoard() {
 
 //alerts the user if someone won
 
-function displayResult(currentClass, message = '') {
-    if (message) {
-        alert(message);
+function displayResult(currentClass) {
+    if (isBoardFull()) {
+        alert('It was a tie!');
     } else {
-        alert(`Wow!`);
+        alert(`Congrats ${currentClass} for winning!`);
     }
 }
 
