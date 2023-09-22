@@ -52,15 +52,17 @@ function isBoardFull() {
     });
 }
 
- // Checks if the 
+ //checks for wins, draws, displays results, and ends game.
 
 function gameLoop() {
     if (checkWin(xClass)) {
         displayResult("X");
+        incrementScoreX();
         removeClickHandlers();
         return;
     } else if (checkWin(circleClass)) {
         displayResult("O");
+        incrementScoreO();
         removeClickHandlers();
         return;
     } else if (isBoardFull()) {
@@ -68,6 +70,23 @@ function gameLoop() {
         removeClickHandlers();
         return;
     }
+}
+
+/**
+ * Gets the current score from the dom and increments it by 1
+ */
+function incrementScoreX() {
+
+    let oldScore = parseInt(document.getElementById("won-times-x").innerText);
+    document.getElementById("won-times-x").innerText = ++oldScore;
+
+}
+
+function incrementScoreO() {
+
+    let oldScore = parseInt(document.getElementById("won-times-o").innerText);
+    document.getElementById("won-times-o").innerText = ++oldScore;
+
 }
 
 //resets the board
