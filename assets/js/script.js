@@ -68,12 +68,12 @@ function isBoardFull() {
 
 function gameLoop() {
     if (checkWin(xClass)) {
-        displayResult("X");
+        displayResult("X won!");
         incrementScoreX();
         disableCellClick();
         return;
     } else if (checkWin(circleClass)) {
-        displayResult("O");
+        displayResult("O won!");
         incrementScoreO();
         disableCellClick(); 
         return;
@@ -120,7 +120,7 @@ function displayResult(currentClass, message = '') {
     if (message) {
         alert(message);
     } else {
-        alert(`Congrats ${currentClass} for winning!`);
+        alert(`Wow!`);
     }
 }
 
