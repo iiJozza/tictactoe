@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Tic Tac Toe</title>
 
-    <meta
-      name="description"
-      content="A simple website where you can play a simple game of Tic Tac Toe!"
-    />
-    <meta
-      name="keywords"
-      content="tictaktoe, Tic Tac Toe, game, simple, easy, play with friends"
-    />
+    <meta name="description" content="A simple website where you can play a simple game of Tic Tac Toe!" />
+    <meta name="keywords" content="tictaktoe, Tic Tac Toe, game, simple, easy, play with friends" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
     <link rel="manifest" href="assets/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="assets/favicons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
         <h1>Tic Tac Toe</h1>
     </header>
 
     <main>
-      <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-      </div>
-      <div class="reset">
-        <button id="restart" class="button">Restart</button>
-      </div>
-        <div class="reset">
-            <button id="rules" class="button">
-                <a href="index.html">Rules</a>
-            </button>
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
         </div>
-      <div class="score-area">
-        <p class="scores-x">X Has Won <span id="won-times-x">0</span> Times!</p>
-        <p class="scores-y">O Has Won <span id="won-times-o">0</span> Times!</p>
-      </div>
+        <div class="button-container">
+            <div class="buttons">
+                <button id="restart" class="button">Restart</button>
+            </div>
+            <div class="buttons">
+                <button id="rules" class="button">
+                    <a href="index.html">Rules</a>
+                </button>
+            </div>
+        </div>
+        <div class="score-area">
+            <p class="scores-x">X Has Won <span id="won-times-x">0</span> Times!</p>
+            <p class="scores-y">O Has Won <span id="won-times-o">0</span> Times!</p>
+        </div>
     </main>
 
     <footer>
-      <p>&copy; Johan Undin</p>
+        <p>&copy; Johan Undin</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>

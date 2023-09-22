@@ -111,21 +111,21 @@ footer {
 /*restart*/
 
 .button {
-    width: 200px;
+    width: 150px;
     height: 50px;
     font-size: 30px;
     cursor: pointer;
 }
 
-.reset a {
+.buttons a {
     text-decoration: none;
-    /* Remove underline */
     color: #000;
-    /* Change link color to black */
 }
 
-.reset {
+.buttons {
     padding: 10px 0px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 /*scores*/
