@@ -70,6 +70,23 @@ function gameLoop() {
     }
 }
 
+//resets the board
+
+const restartButton = document.getElementById('restart');
+restartButton.addEventListener('click', resetBoard);
+
+
+function resetBoard() {
+    cellElements.forEach(cell => {
+        cell.classList.remove(xClass, circleClass);
+    });
+
+    circleTurn = false;
+
+    cellElements.forEach(cell => {
+        cell.addEventListener('click', handleClick, { once: true });
+    });
+}
 
 //Alerts the user if someone won
 
