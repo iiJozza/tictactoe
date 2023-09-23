@@ -214,3 +214,33 @@ footer {
 .x::after {
     transform: rotate(-45deg);
 }
+
+@media screen and (min-width: 768px) {
+    /* Styles for screens with a minimum width of 768px and larger */
+    main {
+        margin-bottom: 100px;
+                /* Adjust margin for larger screens */
+ }
+    
+            h1 {
+                font-size: 60px;
+                /* Adjust font size for larger screens */
+            }
+
+            h2 {
+                font-size: 45px;
+            }
+
+            h3 {
+                font-size: 40px;
+            }
+    
+            p {
+                font-size: 30px;
+                /* Adjust font size for larger screens */
+            }
+    
+            /* Add more styles as needed for larger screens */
+
+
+}
