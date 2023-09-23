@@ -1,6 +1,7 @@
 const xClass = 'x';
 const circleClass = 'circle';
 const cellElements = document.querySelectorAll('[data-cell');
+const restartButton = document.getElementById('restart');
 const winningCombinations = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
     [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -9,31 +10,35 @@ const winningCombinations = [
 let circleTurn = false;
 let gameOver = false;
 
-
-//makes sure only one mark per cell
+/**
+ * makes sure only one mark per cell
+ */
 
 cellElements.forEach(cell => {
     cell.addEventListener('click', handleClick, { once: true });
 });
 
-//handles the placment of the marks
-
+/**
+ *handles the placment of the marks
+ */
 function placeMark(cell, currentClass) {
     cell.classList.add(currentClass);
 }
 
-//handles what mark to place and swapping turns
-
+/**
+ * handles what mark to place and swapping turns
+ */
 function handleClick(e) {
     const cell = e.target;
     const currentClass = circleTurn ? circleClass : xClass;
     placeMark(cell, currentClass);
     circleTurn = !circleTurn;
     gameLoop();
-
 }
 
-//disables mark placement
+/**
+ * disables mark placement
+ */
 
 function disableCellClick() {
     cellElements.forEach(cell => {
@@ -41,8 +46,9 @@ function disableCellClick() {
     });
 }
 
-
-//checks if winning combination exists
+/**
+ * checks if winning combination exists
+ */
 
 function checkWin(currentClass) {
     return winningCombinationExists(currentClass);
@@ -69,12 +75,12 @@ function isBoardFull() {
 function gameLoop() {
     if (checkWin(xClass)) {
         displayResult('x');
-        incrementScoreX();
+        incrementScore('x');
         disableCellClick();
         return;
     } else if (checkWin(circleClass)) {
         displayResult('O');
-        incrementScoreO();
+        incrementScore('o');
         disableCellClick();
         return;
     } else if (isBoardFull()) {
@@ -84,23 +90,22 @@ function gameLoop() {
     }
 }
 
-//gets the current score from dom and adds 1
+/**
+ * increments the score by one depending on who won 
+ */
 
-function incrementScoreX() {
-    let oldScore = parseInt(document.getElementById("won-times-x").innerText);
-    document.getElementById("won-times-x").innerText = ++oldScore;
-}
-
-function incrementScoreO() {
-    let oldScore = parseInt(document.getElementById("won-times-o").innerText);
-    document.getElementById("won-times-o").innerText = ++oldScore;
+function incrementScore(player) {
+    let oldScore = parseInt(document.getElementById(`won-times-${player}`).innerText);
+    document.getElementById(`won-times-${player}`).innerText = ++oldScore;
 }
 
 //resets the board
 
-const restartButton = document.getElementById('restart');
 restartButton.addEventListener('click', resetBoard);
 
+/**
+ * Resets the board and clears messages
+ */
 
 function resetBoard() {
     cellElements.forEach(cell => {
@@ -117,10 +122,10 @@ function resetBoard() {
 //alerts the user if someone won
 
 function displayResult(currentClass) {
-    if (isBoardFull()) {
-        alert('It was a tie!');
+    if (currentClass !=null) {
+        document.querySelector('.messages').innerHTML = `Congrats ${currentClass} for winning!`;
     } else {
-        alert(`Congrats ${currentClass} for winning!`);
+        document.querySelector('.messages').innerHTML = `It is a tie!`;
     }
 }
 
