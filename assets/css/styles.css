@@ -11,7 +11,7 @@
 main {
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ footer {
 /*index information page*/
 
 #information {
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 /*the game board*/
@@ -131,7 +131,7 @@ footer {
 .buttons {
     padding: 10px 0px;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0px 5px;
 }
 
 /*scores*/
