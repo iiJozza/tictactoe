@@ -96,8 +96,8 @@ The project will now have been cloned on your local machine for use.
 
 ## Credits 
 
-- [Build Tic Tac Toe With JavaScript - Tutorial](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=1847s)
-    *Code was used from this youtube tutorial to create the game board and the two different symbols.
+- [Build Tic Tac Toe With JavaScript - Tutorial](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
+    - Code was used from this youtube tutorial to create the game board and the two different symbols.
 - [TicTacToe icon](https://www.flaticon.com/free-icon/tic-tac-toe_566294?term=tic+tac+toe&page=1&position=1&origin=tag&related_id=566294)
-    *The favicon used was a free icon from flaticon.com.
+  - The favicon used from flaticon.
 - Special thanks to Carolina Leguizamon and Daniel Ahlberg for their valuable contributions in testing the website.
