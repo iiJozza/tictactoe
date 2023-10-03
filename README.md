@@ -4,26 +4,32 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 
 ## Features
 
-### Gameboard
+### Home-page
+
+- User is welcomed and introduced to the rules of the game TicTacToe.
+- A small explanation of how to navigate the site is provided.
+- A clickable start button is provided at the bottom of the page that, when clicked, redirects the user to the game-page.
+
+### Game-page
 
 - User is presented with a gameboard.
 - Hovering over the board makes the cursor change to a pointer.
 - Clicking a cell makes an X or O symbol appear, swapping between each click on the gameboard.
 - If someone has won or the game is drawn, no more symbols can be put on the board.
 
-### Interactive Buttons
+#### Interactive Buttons
 
 Below the gameboard, there are two buttons:
 
 - The button on the left, named "Restart," clears all the symbols on the gameboard.
 - The button on the right, named "Info," redirects the user to the home page, where they can review the rules or learn how to interact with the site.
 
-### Scoreboard
+#### Scoreboard
 
 - When either the player using the X's or O's wins, their score increases on the scoreboard below.
 - This feature allows users to keep track of who has won if played multiple times.
 
-### Winning Message
+#### Winning Message
 
 - When a match concludes with a tie or when someone has won, a message pops up underneath the gameboard, declaring the winner or indicating if it's a draw.
 
