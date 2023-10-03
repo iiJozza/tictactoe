@@ -8,7 +8,7 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 
 ### Home page
 
-- User is welcomed and introduced to the rules of the game TicTacToe.
+- Users are welcomed and introduced to the rules of the game TicTacToe.
 - A small explanation of how to navigate the site is provided.
 - A clickable start button is provided at the bottom of the page that, when clicked, redirects the user to the game page.
 
@@ -16,18 +16,18 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 
 ### Game page
 
-- User is presented with a gameboard.
+- User is presented with a game board.
 - Hovering over the board makes the cursor change to a pointer.
-- Clicking a cell makes an X or O symbol appear, swapping between each click on the gameboard.
+- Clicking a cell makes an X or O symbol appear, swapping between each click on the game board.
 - If someone has won or the game is drawn, no more symbols can be put on the board.
   
 ![Game page](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-game-page.PNG)
 
 #### Navigation Buttons
 
-Below the gameboard, there are two buttons:
+Below the game board, there are two buttons:
 
-- The button on the left, named "Restart," clears all the symbols on the gameboard.
+- The button on the left, named "Restart," clears all the symbols on the game board.
 - The button on the right, named "Info," redirects the user to the home page, where they can review the rules or learn how to interact with the site.
 
 ![Navigation buttons](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-buttons.PNG)
@@ -41,7 +41,7 @@ Below the gameboard, there are two buttons:
 
 #### Winning Message
 
-- When a match concludes with a tie or when someone has won, a message pops up underneath the gameboard, declaring the winner or indicating if it's a draw.
+- When a match concludes with a tie or when someone has won, a message pops up underneath the game board, declaring the winner or indicating if it's a draw.
 
 ![Winning message](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-winning-msg.PNG)
 
@@ -71,7 +71,7 @@ The following technologies were used in the development of this project:
 
 ### Responsiveness
 
-- These were the different steps used to check the websites responsiveness
+- These were the different steps used to check the website's responsiveness and for potential bugs.
 
 ![Responsive testing](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/responsiveness-testing.png)
 
@@ -94,7 +94,7 @@ The following technologies were used in the development of this project:
 
 - JavaScript
   - No errors were returned when passing through the [JShint validator](https://jshint.com/)
-  - Several varnings was however returned due to the using ES6 (ECMAScript 2015) features such as const, let, arrow functions (=>), and template literals.
+  - Several warnings was however returned due to the using ES6 (ECMAScript 2015) features such as const, let, arrow functions (=>), and template literals.
 
 ![JS Validator](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-validator-js.PNG)
 
