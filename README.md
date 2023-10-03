@@ -1,18 +1,22 @@
+# TicTacToe
+
+TicTacToe is a simple JavaScript game built to allow users to play one or several games of TicTacToe. It was built to work like the original TicTacToe game.
+
 ## Features
 
 ### Gameboard
 
 - User is presented with a gameboard.
 - Hovering over the board makes the cursor change to a pointer.
-- Clicking a cell makes an X or O appear, depending on whose turn it is.
-- If someone has won or the game is drawn, no more marks can be put on the board.
+- Clicking a cell makes an X or O symbol appear, swapping between each click on the gameboard.
+- If someone has won or the game is drawn, no more symbols can be put on the board.
 
 ### Interactive Buttons
 
 Below the gameboard, there are two buttons:
 
 - The button on the left, named "Restart," clears all the symbols on the gameboard.
-- The button on the right, named "Info," redirects the user to the home page where they can review the rules or learn how to interact with the site.
+- The button on the right, named "Info," redirects the user to the home page, where they can review the rules or learn how to interact with the site.
 
 ### Scoreboard
 
@@ -51,7 +55,7 @@ The following technologies were used in the development of this project:
 
 ### Version Control
 
-The site was created using the Codeanywhere editor and pushed to github to the remote repository ‘Portfolio-Project-2-Poker-Fun’.
+The site was created using the Codeanywhere editor and pushed to github to the remote repository ‘tictactoe’.
 
 The following git commands were used throughout development to push code to the remote repo:
 
@@ -71,3 +75,16 @@ The following git commands were used throughout development to push code to the 
   - A live link will be displayed in a green banner when published successfully.
 
 The live link can be found here - <https://iijozza.github.io/tictactoe/>
+
+### Clone the Repository Code Locally
+
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
+
+The project will now have been cloned on your local machine for use.
+
