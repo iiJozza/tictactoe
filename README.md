@@ -25,10 +25,10 @@ Below the gameboard, there are two buttons:
 
 ## Features Left to Implement
 
-There are several features you plan to implement in the future:
+There are several features I plan to implement in the future:
 
 - Make the winning screen and restart button be connected to a pop-up window that shows up when a game is concluded.
-- Style both the home page and the game page to make them more appealing.
+- Style both the home-page and the game-page to make them more appealing.
 - Make the game more suitable to play on larger screens.
 - Implement a feature where the person who went second last round gets to go first the next round.
 
@@ -44,3 +44,30 @@ The following technologies were used in the development of this project:
 - **Git:** Used for version control, allowing for commits and code pushes during development.
 - **Font Awesome:** Icons obtained from [Font Awesome](https://fontawesome.com/) were used for the favicon.
 - **Favicon.io:** Favicon files were created at [Favicon.io](https://favicon.io/favicon-converter/).
+
+## Testing 
+
+## Deployment
+
+### Version Control
+
+The site was created using the Codeanywhere editor and pushed to github to the remote repository ‘Portfolio-Project-2-Poker-Fun’.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add .``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
+
+### Deployment to Github Pages
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully.
+
+The live link can be found here - <https://iijozza.github.io/tictactoe/>

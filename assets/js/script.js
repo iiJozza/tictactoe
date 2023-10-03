@@ -1,6 +1,6 @@
 const xClass = 'x';
 const circleClass = 'circle';
-const cellElements = document.querySelectorAll('[data-cell');
+const cellElements = document.querySelectorAll('[data-cell]');
 const restartButton = document.getElementById('restart');
 const winningCombinations = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -8,7 +8,6 @@ const winningCombinations = [
     [0, 4, 8], [2, 4, 6]
 ];
 let circleTurn = false;
-let gameOver = false;
 
 /**
  * makes sure only one mark per cell
@@ -62,7 +61,9 @@ function winningCombinationExists(currentClass) {
     });
 }
 
-//handles if it is a draw
+/**
+ * handles if it is a draw
+ */
 
 function isBoardFull() {
     return [...cellElements].every(cell => {
@@ -70,7 +71,9 @@ function isBoardFull() {
     });
 }
 
-//checks for wins, draws, displays results, and ends game.
+/**
+*checks for wins and draws, displays results, and ends game.
+*/
 
 function gameLoop() {
     if (checkWin(xClass)) {
@@ -91,7 +94,7 @@ function gameLoop() {
 }
 
 /**
- * increments the score by one depending on who won 
+ *increments the score by one depending on who won 
  */
 
 function incrementScore(player) {
@@ -99,7 +102,9 @@ function incrementScore(player) {
     document.getElementById(`won-times-${player}`).innerText = ++oldScore;
 }
 
-//resets the board
+/**
+*resets the board
+*/
 
 restartButton.addEventListener('click', resetBoard);
 
@@ -119,7 +124,9 @@ function resetBoard() {
     });
 }
 
-//alerts the user if someone won
+/**
+*alerts the user if someone won
+*/
 
 function displayResult(currentClass) {
     if (currentClass !=null) {
