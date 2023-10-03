@@ -2,7 +2,7 @@
 
 TicTacToe is a simple JavaScript game built to allow users to play one or several games of TicTacToe. It was built to work like the original TicTacToe game.
 
-![Mock Up](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/mockup.png)
+![Mock Up](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/mockup.png)
 
 ## Features
 
@@ -20,23 +20,30 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 - Hovering over the board makes the cursor change to a pointer.
 - Clicking a cell makes an X or O symbol appear, swapping between each click on the gameboard.
 - If someone has won or the game is drawn, no more symbols can be put on the board.
+  
 ![Game page](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-game-page.PNG)
 
-#### Interactive Buttons
+#### Navigation Buttons
 
 Below the gameboard, there are two buttons:
 
 - The button on the left, named "Restart," clears all the symbols on the gameboard.
 - The button on the right, named "Info," redirects the user to the home page, where they can review the rules or learn how to interact with the site.
 
+![Navigation buttons](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-game-page.PNG)
+
 #### Scoreboard
 
 - When either the player using the X's or O's wins, their score increases on the scoreboard below.
 - This feature allows users to keep track of who has won if played multiple times.
 
+![Scoreboard](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-scoreboard.PNG)
+
 #### Winning Message
 
 - When a match concludes with a tie or when someone has won, a message pops up underneath the gameboard, declaring the winner or indicating if it's a draw.
+
+![Winning message](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-winning-msg.PNG)
 
 ## Features Left to Implement
 
@@ -64,19 +71,30 @@ The following technologies were used in the development of this project:
 
 ### Responsiveness
 
-[Responsive testing](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/responsiveness-testing.png)
+![Responsive testing](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/responsiveness-testing.png)
 
 ### Validator
 
 #### Validator Testing
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+  - One error were returned when passing through the official [W3C validator](https://validator.w3.org)
+  - Unfortunately I won't be fixing this issue in the present moment due to time constraints.
 
-![Home HTML Validator Results](docs/readme_images/home_validator.PNG)
+![Home page HTML Validator Results](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-error-home-page.PNG)
 
-![Game Page](docs/readme_images/game_validator.PNG)
+![Game Page HTML Validator Results](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-error-game-page.PNG)
 
+- CSS
+  - No error were returned when passing through the official [W3C validator](https://validator.w3.org)
+  
+![CSS Validator](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-validator-css.PNG)
+
+- JavaScript
+  - No errors were returned when passing through the [JShint validator](https://jshint.com/)
+  - Several varnings was however returned due to the using ES6 (ECMAScript 2015) features such as const, let, arrow functions (=>), and template literals.
+
+![JS Validator](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-validator-js.PNG)
 
 ## Deployment
 
