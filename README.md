@@ -12,7 +12,7 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 - A small explanation of how to navigate the site is provided.
 - A clickable start button is provided at the bottom of the page that, when clicked, redirects the user to the game page.
 
-![Home page](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/readme-home-page.PNG)
+![Home page](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-home-page.PNG)
 
 ### Game page
 
@@ -30,7 +30,7 @@ Below the gameboard, there are two buttons:
 - The button on the left, named "Restart," clears all the symbols on the gameboard.
 - The button on the right, named "Info," redirects the user to the home page, where they can review the rules or learn how to interact with the site.
 
-![Navigation buttons](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-game-page.PNG)
+![Navigation buttons](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-buttons.PNG)
 
 #### Scoreboard
 
@@ -71,6 +71,8 @@ The following technologies were used in the development of this project:
 
 ### Responsiveness
 
+- These were the different steps used to check the websites responsiveness
+
 ![Responsive testing](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/responsiveness-testing.png)
 
 ### Validator
@@ -95,6 +97,9 @@ The following technologies were used in the development of this project:
   - Several varnings was however returned due to the using ES6 (ECMAScript 2015) features such as const, let, arrow functions (=>), and template literals.
 
 ![JS Validator](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-validator-js.PNG)
+
+- Wave
+  - No errors returned during the accessibility evaluation through [Wave](https://wave.webaim.org/report#/https://iijozza.github.io/tictactoe/)
 
 ## Deployment
 
