@@ -20,7 +20,8 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 - Hovering over the board makes the cursor change to a pointer.
 - Clicking a cell makes an X or O symbol appear, swapping between each click on the gameboard.
 - If someone has won or the game is drawn, no more symbols can be put on the board.
-![Home page](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/readme-game-page.PNG)
+![Game page](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/readme-game-page.PNG)
+
 #### Interactive Buttons
 
 Below the gameboard, there are two buttons:
@@ -64,6 +65,18 @@ The following technologies were used in the development of this project:
 ### Responsiveness
 
 [Responsive testing](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/responsiveness-testing.png)
+
+### Validator
+
+#### Validator Testing
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+
+![Home HTML Validator Results](docs/readme_images/home_validator.PNG)
+
+![Game Page](docs/readme_images/game_validator.PNG)
+
 
 ## Deployment
 
