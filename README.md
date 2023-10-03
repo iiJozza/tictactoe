@@ -2,6 +2,8 @@
 
 TicTacToe is a simple JavaScript game built to allow users to play one or several games of TicTacToe. It was built to work like the original TicTacToe game.
 
+![Mock Up](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/mockup.png)
+
 ## Features
 
 ### Home page
@@ -10,13 +12,15 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 - A small explanation of how to navigate the site is provided.
 - A clickable start button is provided at the bottom of the page that, when clicked, redirects the user to the game page.
 
+![Home page](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/readme-home-page.PNG)
+
 ### Game page
 
 - User is presented with a gameboard.
 - Hovering over the board makes the cursor change to a pointer.
 - Clicking a cell makes an X or O symbol appear, swapping between each click on the gameboard.
 - If someone has won or the game is drawn, no more symbols can be put on the board.
-
+![Home page](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/readme-game-page.PNG)
 #### Interactive Buttons
 
 Below the gameboard, there are two buttons:
@@ -56,6 +60,10 @@ The following technologies were used in the development of this project:
 - **Favicon.io:** Favicon files were created at [Favicon.io](https://favicon.io/favicon-converter/).
 
 ## Testing 
+
+### Responsiveness
+
+[Responsive testing](https://github.com/iiJozza/Canapes-shop/blob/main/assets/readme-images/responsiveness-testing.png)
 
 ## Deployment
 
@@ -97,7 +105,7 @@ The project will now have been cloned on your local machine for use.
 ## Credits 
 
 - [Build Tic Tac Toe With JavaScript - Tutorial](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
-    - Code was used from this youtube tutorial to create the game board and the two different symbols.
+  - Code was used from this youtube tutorial to create the game board and the two different symbols.
 - [TicTacToe icon](https://www.flaticon.com/free-icon/tic-tac-toe_566294?term=tic+tac+toe&page=1&position=1&origin=tag&related_id=566294)
   - The favicon used from flaticon.
 - Special thanks to Carolina Leguizamon and Daniel Ahlberg for their valuable contributions in testing the website.
