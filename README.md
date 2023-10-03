@@ -1,6 +1,6 @@
-# TicTacToe
+# Tic Tac Toe
 
-TicTacToe is a simple JavaScript game built to allow users to play one or several games of TicTacToe. It was built to work like the original TicTacToe game.
+Tic Tac Toe is a simple JavaScript game built to allow users to play one or several games of TicTacToe. It was built to work like the original Tic Tac Toe game.
 
 ![Mock Up](https://github.com/iiJozza/tictactoe/blob/main/assets/readme-images/mockup.png)
 
@@ -8,7 +8,7 @@ TicTacToe is a simple JavaScript game built to allow users to play one or severa
 
 ### Home page
 
-- Users are welcomed and introduced to the rules of the game TicTacToe.
+- Users are welcomed and introduced to the rules of the game Tic Tac Toe.
 - A small explanation of how to navigate the site is provided.
 - A clickable start button is provided at the bottom of the page that, when clicked, redirects the user to the game page.
 
@@ -142,6 +142,6 @@ The project will now have been cloned on your local machine for use.
 
 - [Build Tic Tac Toe With JavaScript - Tutorial](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
   - Code was used from this youtube tutorial to create the game board and the two different symbols.
-- [TicTacToe icon](https://www.flaticon.com/free-icon/tic-tac-toe_566294?term=tic+tac+toe&page=1&position=1&origin=tag&related_id=566294)
-  - The favicon used from flaticon.
+- [Tic Tac Toe icon](https://www.flaticon.com/free-icon/tic-tac-toe_566294?term=tic+tac+toe&page=1&position=1&origin=tag&related_id=566294)
+  - The favicon used comes from flaticon.
 - Special thanks to Carolina Leguizamon and Daniel Ahlberg for their valuable contributions in testing the website.
